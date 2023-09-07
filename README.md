@@ -1,24 +1,10 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+BurgherPOS is a rudimentary POS system utilizing devise-api for authentication purposes.
 
-Things you may want to cover:
+* Users can create new Checks and create new Orders to add to Checks.  New orders update Product inventory.
+* Administrators can create and destroy Products
 
-* Ruby version
+demo video: https://youtu.be/KZAuL0c88cw
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Try the application for yourself: https://burghers-pos.onrender.com/

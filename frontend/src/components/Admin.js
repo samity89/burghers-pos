@@ -1,7 +1,5 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { UserContext } from "./UserContext"
-import { useContext } from "react"
 
 function Admin ({products, setProducts}) {
     const [productForm, setProductForm] = useState({
@@ -12,13 +10,6 @@ function Admin ({products, setProducts}) {
     })
     const [errors, setErrors] = useState([])
     const navigate = useNavigate()
-    const { user } = useContext(UserContext)
-
-    useEffect(() => {
-        if (!user || !user.admin) { 
-          navigate("/")
-         }
-      },[user, navigate])
 
     const handleChange = e => {
         const name = e.target.name;
