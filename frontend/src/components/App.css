@@ -1,0 +1,134 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.product_card {
+  border: rgb(255, 255, 255) solid 1px;
+  padding: 10px;
+  /* width: 130px; */
+  height: auto;
+  /* display: inline-grid; */
+  margin: 10px 10px;
+  box-shadow: 3px 4px #e0ca4bbe;
+  background-color: rgb(255, 235, 59);
+  vertical-align: top;
+  justify-items: center;
+}
+
+.card {
+  border: rgb(255, 255, 255) solid 1px;
+  padding: 5px;
+  width: fit-content;
+  height: fit-content;
+  box-shadow: 3px 4px #e0ca4bbe;
+  background-color: rgb(255, 235, 59);
+  vertical-align: top;
+  justify-items: center;
+}
+
+.card_container {
+  height: 40rem;
+  margin-top: 20px;
+  margin-left: 320px;
+  margin-right: 320px;
+  overflow-y: auto;
+  justify-items: center;
+  --n: 6;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(max(200px, 100%/var(--n)), 1fr));
+}
+
+.check_panel {
+  border: rgb(255, 255, 255) solid 1px;
+  padding: 10px;
+  width: 200px;
+  display: block;
+  /* margin: 0px 11px; */
+  box-shadow: 3px 4px #e0ca4bbe;
+  background-color: rgb(255, 235, 59);
+  top: 0;
+  left: 0;
+  height: 95%;
+  position: absolute;
+  text-align: left;
+  overflow-y: auto;
+}
+
+.form_container {
+  align-content: center;
+  display: inline-table;
+  justify-content: left;
+  width: fit-content;
+  border: #221f1f;
+}
+
+label {
+  display: table-cell;
+  text-align: right;
+}
+
+input {
+  display: table-cell;
+}
+
+button {
+  background-color: #221f1f;
+  border-color: #ffffff;
+  color: white;
+  padding: 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 3px 3px;
+  font-weight: bold;
+}
+
+button:disabled {
+  background-color: #818181;
+  color: rgb(223, 223, 223);
+  border-color: black;
+}
+
+li {
+  text-align: left;
+  font-weight: bold;
+  color: red;
+}
+
+.total {
+  position: absolute;
+  bottom: 10px;
+  font-weight: bold;
+}
+
+.close_button {
+  position: absolute;
+  bottom: 40px
+}
+
+form {
+  border: #221f1f;
+  border-style: double;
+  padding: 1rem;
+}
